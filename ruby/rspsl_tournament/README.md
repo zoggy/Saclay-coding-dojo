@@ -17,7 +17,7 @@ game from the Big-Bang Theory series...)
 * Spock vaporizes Rock
 * Rock crushes Scissors
 
-## The "dead match"
+## The "death match"
 
 The Rock-Scissor-Paper-Lizard-Spock dead match input is encoded as a list, where the elements are 2-element lists that encode a player's name and
 a player's strategy. Ex:
