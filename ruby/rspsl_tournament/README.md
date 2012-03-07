@@ -20,15 +20,19 @@ game from the Big-Bang Theory series...)
 ## The "dead match"
 
 The Rock-Scissor-Paper-Lizard-Spock dead match input is encoded as a list, where the elements are 2-element lists that encode a player's name and
-a player's strategy.
+a player's strategy. Ex:
 
-Ex: [ [ "Rajesh", "Paper" ], [ "Sheldon", "Scissors" ] ] => returns the list ["Sheldon", "Scissors"] since Scissors cuts Paper
+``` ruby
+	[ [ "Rajesh", "Paper" ], [ "Sheldon", "Scissors" ] ]
+```
+
+... returns the list ["Sheldon", "Scissors"] since Scissors cuts Paper
 
 ## The tournament
 
-The tournament input is encoded as a bracketed array of games, that is, each element can be considered its own tournament.
+The tournament input is encoded as a bracketed array of games, that is, each element can be considered its own tournament. Ex: 
 
-Ex: 
+``` ruby
 	[
 		[
 			[ ["Rajesh", "Paper"], ["Sheldon", "Scissors"] ],
@@ -38,11 +42,10 @@ Ex:
 			[ ["Leonard", "Lizard"], ["Leslie", "Paper"] ],
 			[ ["Bernadette", "Paper"], ["Stuart", "Spock"] ]
 		]
-	] => returns the list ["Penny", "Rock"] since ... yeah... you've figured it out...
+	]
+```
+... returns the list ["Penny", "Rock"] since ... yeah... you've figured it out...
 	
 ## Assumptions
 
 * You can assume that the array is well formed (that is, there are 2^n players, and each one participates in exactly one match per round).
-
-
-That's it!
