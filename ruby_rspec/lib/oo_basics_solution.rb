@@ -4,14 +4,15 @@ class ChuckNorrisError < StandardError ; end
 
 class Person
   
-  @attr_accessor name, age
+  attr_accessor :name, :age
   
   def initialize(name, age)
+    @name = name
     @age = age
   end
   
   def is_old?
-    if (@age > 40) then
+    if (@age > 60) then
       return true
     end
     
