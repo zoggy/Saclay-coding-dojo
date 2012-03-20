@@ -2,10 +2,8 @@
 
 This kata covers:
 
-* Basic input/output
+* Roman Numerals problem
 
 * Basic string manipulation
-
-* Basic OO concepts (+ very short example of class reopen and metaprogramming)
 
 * Basic utilization of Rspec
