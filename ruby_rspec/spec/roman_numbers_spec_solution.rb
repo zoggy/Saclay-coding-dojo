@@ -64,6 +64,10 @@ describe "Roman numbers" do
     it 'should convert number 93 to numeral XCIII' do
       93.convert.should == "XCIII"
     end
+    
+    it 'should convert number 99 to numeral XCIX' do
+      99.convert.should == "XCIX"
+    end
   end
   
 end
