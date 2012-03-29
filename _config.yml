@@ -1,0 +1,6 @@
+permalink: /:year/:month/:day/:title
+paginate: 10
+exclude: ["Makefile", "LICENSE.txt", "CNAME"]
+title: Coding-dojo de Saclay
+url: http://zoggy.github.com/Saclay-coding-dojo/
+markdown: rdiscount

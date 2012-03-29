@@ -1,0 +1,27 @@
+---
+layout: default
+navbar-sessions: active
+---
+<div class="session">
+<p>
+<strong>Type</strong>: {{ page.type }}
+</p>
+<p>
+<strong>Sujet</strong>: {{ page.subject }}
+</p>
+<p>
+<strong>Langage(s)</strong>: {{ page.language }}
+</p>
+<p>
+<strong>Lieu</strong>: {{ page.place }}
+</p>
+<p>
+<strong>Code produit</strong>: <a href="{{ page.code }}">{{ page.code }}</a>
+</p>
+<div class="content">
+  {{ content }}
+</div>
+{% unless page.no_comments %}
+  {% include disqus-comments.html %}
+{% endunless %}
+</div>

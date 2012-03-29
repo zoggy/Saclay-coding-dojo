@@ -1,0 +1,15 @@
+<div class="float-right"><a href="feed.xml"><img width="40" src="rss.svg" alt="RSS feed"/></a></div>
+{% for post in posts limit: listing_limit %}
+  <h3><a href="{{site.url}}{{ post.url }}" class="dark-link">{{ post.title }}</a></h3>
+  <h4 class="low-top">
+    Publié le {{ post.date | date: "%d-%m-%Y" }}
+    {% unless no_category %}
+      {% if post.category %}
+        in <a href="/categories/{{ post.category | slugize }}">{{ post.category }}</a>
+      {% endif %}
+    {% endunless %}
+  </h4>
+
+  <p>{{ post.content | strip_html | truncatewords: 75 }}</p>
+  <p><a href="{{site.url}}{{ post.url }}">Lire plus...</a></p>
+{% endfor %}
