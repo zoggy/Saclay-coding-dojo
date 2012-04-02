@@ -37,3 +37,4 @@ We can use some input examples from [Project Gutenberg](http://www.gutenberg.org
 
 * TDD for random techiniques can be difficult to design.
 * Ponctuation can be difficult to handle.
+* Do we need to handle upcase?
