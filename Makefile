@@ -9,6 +9,6 @@ style.css: $(LESS_FILES)
 	$(LESSC) less/bootstrap.less > $@
 
 test: style.css
-	$(JEKYLL) --url file://`pwd`/_site
+	$(JEKYLL) --url file://`pwd`/_site/
 
 	
