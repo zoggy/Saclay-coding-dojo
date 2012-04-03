@@ -12,4 +12,5 @@ To know more about coding dojo, go to http://codingdojo.org/
 
 * The 'randori' branch surprisely contains the code solution for randoris.
 
-Inside the 'katas' and 'randori' brances, the code is separated by folders indicating the language or utils used on the metting.
+Inside the 'katas' and 'randori' branches, the code is separated by folders indicating the date of the session. The description of each session must be briefly described
+on the readme of the correspondent branch.
